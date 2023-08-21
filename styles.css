@@ -291,8 +291,23 @@ body {
 .contact-div .sec-h1{
    color: whitesmoke;
 } 
-.link-ul li{
-    text-align: left;
+.link-ul{
     list-style: none;
+    color: whitesmoke;
+    line-height: 40px;
+    font-family: "ABC Social", Arial, sans-serif;
+}
+.link-li a{
+    list-style: none;
+    color: whitesmoke;
     text-decoration: none;
+    line-height: 40px;
+    font-family: "ABC Social", Arial, sans-serif;
+}
+
+.link-li a:hover{
+    color: #6070ff;
+}
+.footer-div{
+    background-color: black;
 }
