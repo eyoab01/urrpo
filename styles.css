@@ -87,7 +87,7 @@ body {
 }
 .btn-read:hover{
     color: white;
-    background: #6070ff;
+    background: #685b47;;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
     cursor: pointer;
 }
@@ -151,7 +151,7 @@ body {
 }
 
 .works-div{
-    padding: 30px 100px 30px 100px;
+    padding: 100px 100px 30px 100px;
     display: flex;
 
 }
@@ -172,7 +172,7 @@ body {
 
 .work-card:hover{
     background-color: #ebebec;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
    
 }
 
@@ -181,7 +181,7 @@ body {
     line-height: 20px;
     color: #344563;
     font-style: normal;
-    padding:10px 20px 10px 20px
+    padding:10px 20px 100px 20px
 }
 
 .card-h1{
@@ -198,13 +198,14 @@ body {
     background: #d6a04f;
     border-radius:50px;
     cursor: pointer;
+   
 }
 .btn-read-wc:hover{
     background: #685b47; 
 }
 
 .ongoing-div{
-    padding: 30px 300px 50px 300px;
+    padding: 100px 300px 50px 300px;
     display: flex;
     gap:20px;
 }
@@ -219,7 +220,7 @@ body {
     border-radius: 20px;
     overflow: hidden; 
     box-shadow: #344563;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;  
 }
 
@@ -240,7 +241,7 @@ body {
     line-height: 20px;
     color: #344563;
     font-style: normal;
-    padding:10px 20px 10px 20px;
+    padding:10px 20px 100px 20px
 }
 
 .btn-read-on{
@@ -264,7 +265,7 @@ body {
 }
 
 #contact-sec{
-    padding-top: 100px;
+    padding-top: 1.5px;
     width:100%;
     height:fit-content;    
 }
@@ -274,7 +275,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 100px;
-    padding: 50px 200px 100px 200px;
+    padding: 100px 200px 100px 200px;
 }
 
 .address-div{
