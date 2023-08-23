@@ -14,6 +14,7 @@
     --p-f-c:#17494d;
     --secheader:#03363d;
     --seccolor: whitesmoke;
+    --p-font: "Poppins", sans-serif;
   }
 body {
     box-sizing: border-box;
@@ -79,7 +80,7 @@ body {
     padding:15px 20px 15px 20px;
     color: white;
     font-weight: bold;
-    background: #d6a04f;
+    background: rgb(245, 185, 19);
     border-radius:20px;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
@@ -89,7 +90,28 @@ body {
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.4);
     cursor: pointer;
 }
+#page-sec{
+    padding-left: 80px;
+    padding-bottom: 50px;
+}
+.p-title{
+    color:rgb(255, 254, 253);
+    font-family:var(--secheader);
+    font-size: 2rem;
+    padding:10px 0 0 10px;
+    background-color:rgb(247, 183, 5); 
+}
 
+.p-title-div{
+    display: flex;
+    padding-left: 100px;
+    color:rgb(247, 183, 5);
+}
+.page-content p{
+    padding-top: 50px;
+    color:var(--secheader);
+    font-family:var(--p-font);
+}
 #message-sec {
     padding-top: 100px;
     width:100%;
