@@ -98,17 +98,16 @@ body {
     color:rgb(255, 254, 253);
     font-family:var(--secheader);
     font-size: 2rem;
-    padding:10px 0 0 80px;
+    padding:10px 0 0 1px;
     background-color:rgb(247, 183, 5); 
 }
 #sec1, #sec2, #sec3, #sec4{
-    padding-left: 80px;
-    padding:50px 150px 50px 150px;
+  
+    padding:50px 200px 50px 200px;
 }
 
 .p-title-div{
     display: flex;
-    padding-left: 100px;
     color:rgb(247, 183, 5);
 }
 .page-content p{
@@ -122,7 +121,7 @@ body {
     padding-bottom: 40px;
 }
 #message-sec {
-    padding-top: 100px;
+    padding-top: 150px 200px 50px 200px;
     width:100%;
     height:800px;
     background-color: var( --seccolor);
@@ -169,7 +168,7 @@ body {
 }
 
 #works-sec{
-    padding-top: 100px;
+    padding-top: 100px 200px 0 200px;
     width:100%;
     height: 1500px;
     padding-bottom: 40px;
@@ -182,7 +181,7 @@ body {
 .works-div{
     padding: 100px 100px 30px 100px;
     display: flex;
-    gap:40px;
+    gap:20px;
 
 }
 
