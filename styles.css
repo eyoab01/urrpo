@@ -24,7 +24,7 @@ body {
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
+    padding: 15px 80px 15px 80px;
     background: white;
     position: fixed;
     top: 0;
@@ -65,7 +65,7 @@ body {
 }
 .header-div{
     display: block;
-    padding: 10px 70px 30px 80px;
+    padding: 10px 70px 30px 200px;
     width: 75%;
 }
 .header-p {
@@ -98,8 +98,12 @@ body {
     color:rgb(255, 254, 253);
     font-family:var(--secheader);
     font-size: 2rem;
-    padding:10px 0 0 10px;
+    padding:10px 0 0 80px;
     background-color:rgb(247, 183, 5); 
+}
+#sec1, #sec2, #sec3, #sec4{
+    padding-left: 80px;
+    padding:50px 150px 50px 150px;
 }
 
 .p-title-div{
@@ -109,8 +113,13 @@ body {
 }
 .page-content p{
     padding-top: 50px;
-    color:var(--secheader);
     font-family:var(--p-font);
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #344563;
+    padding-bottom: 40px;
 }
 #message-sec {
     padding-top: 100px;
