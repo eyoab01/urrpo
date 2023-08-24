@@ -20,31 +20,39 @@ body {
     box-sizing: border-box;
     margin: 0;
     font-family: sans-serif;
+    padding-top: 120px;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 80px 15px 80px;
+.header{
     background: white;
     position: fixed;
     top: 0;
     width: 100%;
     box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 }
-.nav-links {
+.header__content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+.hamburger{
+    display: none;
+}
+.nav__list {
     display: flex;
     list-style: none;
-    gap: 20px;  
+    gap: 40px;  
     padding: 30px 40px 20px 0px; 
     font-size: 1.5rem;
 }
 
-.nav-links li a{
+.nav__list li a{
     text-decoration: none;
     color: rgb(24, 25, 26);
 }
-.nav-links li a:hover{
+.nav__list li a:hover{
     color:  var(--header);
+    transition: all 0.6s;
 }
 
 .header-h1 {
@@ -331,6 +339,7 @@ body {
 .link-div .sec-h1{
     text-align: left;
 }
+
 .add-ul li{
     list-style: none;
     color: whitesmoke;
@@ -386,4 +395,171 @@ body {
     color: whitesmoke;
     text-align: center;
 }
+.bar{
+    height: 4px;
+    width:27px;
+    background: #03363d;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+.nav {
+    transition: all 0.3s ease-in-out;
+}
+.nav--open{
+    transform: translate(0) !important;
+}
+.hamburger--open .bar:nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger--open .bar:nth-child(2){
+    opacity:0;
+}
+.hamburger--open .bar:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+}
 
+@media (max-width: 768px) {
+
+    .nav{
+        position: fixed;
+        top:120px;
+        left:0;
+        background-color: whitesmoke;
+        width: 100%;
+        padding: 10px 0 25px;
+        transform: translateX(-100%);
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius:50px;
+    }
+    .nav__list{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .nav__link{
+        font-size: 14px;
+    }
+    
+    .hamburger {
+        display: block;  
+    }
+    .nav__item {
+        display: block;
+        margin: 2rem 4rem;
+        font-size: 1.8rem;
+        color: white;
+        text-decoration: none;
+    }
+      
+    .nav__item:hover {
+        text-decoration: underline;
+    }
+    .header-div{
+        display: block;
+        padding: 10px 30px 30px 30px;
+        width: 75%;
+    }
+    
+    .msg-div{
+        padding-left: 30px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .works-div{
+        padding: 10px 30px 30px 30px;
+        display: flex;
+        gap:20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #works-sec{
+    padding: 10px 30px 30px 30px;
+    width:100%;
+    height: auto;
+    background-color: var( --seccolor);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    }
+
+    .work-card{
+        width:100%;
+        height: 300px;
+        margin: 2px;
+        background-color: var(--seccolor);
+        padding: 5px;
+        border-radius: 20px;
+        overflow: hidden; 
+        box-shadow: #344563;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        transition: 0.5s;  
+        display: flex;
+        flex-direction: column;  
+        align-items: center;  
+    }
+    .ongoing-div{
+        padding: 10px 30px 30px 30px;
+        display: flex;
+        gap:20px;
+        flex-direction: column;
+    }
+    
+    .ongoing-card{
+        width:100%;
+        height: 250px;
+        margin: 2px;
+        background-color: var(--seccolor);
+        padding: 5px;
+        border-radius: 20px;
+        overflow: hidden; 
+        box-shadow: #344563;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        transition: 0.5s;  
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        align-items: center;
+    }
+
+    #contact-sec{
+        padding: 1.5px 0px 30px 0px;
+        width:100%;
+        height:auto;    
+    }
+
+    .contact-div{
+        background-color: #2f466c;
+       padding: 10px 20px;
+        display: flex;
+        gap:20px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+       
+    }
+    .address-div{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        size: 100%;
+    }
+    .social-div {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .link-div {
+        width: 100%;
+        align-items: center;
+    }
+    .social-div .sec-h1 {
+        text-align: center;
+    }
+  }
