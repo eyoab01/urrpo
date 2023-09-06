@@ -109,24 +109,26 @@ body {
 .header-div{
     display: block;
     padding: 10px 70px 30px 200px;
-    width: 75%;
+    width: 100%;
 }
 .header-p {
     color: orange;
     font-weight: 1000;
     padding-top: 10px;
+    padding-left: 50px;
     line-height: 1.5em;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 .btn-read {
     cursor: pointer;
-    padding:15px 20px 15px 20px;
+    padding:15px 20px 15px 100px;
     color: white;
     font-weight: bold;
     background: rgb(245, 185, 19);
     border-radius:20px;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
+
 .btn-read:hover{
     color: white;
     background: #685b47;;
@@ -638,7 +640,12 @@ body {
     .nav__list{
         flex-direction: column;
         align-items: center;
-        row-gap: 20px;
+        row-gap: 0px;
+    }
+    .nav__list ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
     .nav__link{
         font-size: 14px;
@@ -661,7 +668,7 @@ body {
     .header-div{
         display: block;
         padding: 10px 30px 30px 30px;
-        width: 75%;
+        width: 100%;
     }
     
     .msg-div{
@@ -747,11 +754,10 @@ body {
         text-align: center;
        
     }
-    .address-div{
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        size: 100%;
+   
+    .address-div {
+        width: 100%;
+        padding-left: 50px;
     }
     .social-div {
         width: 100%;
@@ -777,4 +783,50 @@ body {
             display: flex;
             flex-direction: column;
         }
+        .popcontent, .popthree, .poptwo {
+            padding: 10px 20px 10px 20px;
+             background-color: whitesmoke;
+             border-radius: 20px;
+         
+           }
+         .popwin {
+             min-width: 100%;
+             min-height:100%;
+             padding: 25px 25px 25px 25px;
+             background-color: rgb(0, 0, 0, 50%);
+             position: fixed;
+             top: 0;
+             display: flex;
+             justify-content: center;
+             flex-direction: column;
+           }
+           .v-line{
+            display: none;
+           }
+           .page-content-about{
+            display: flex;
+            background-color: whitesmoke;
+            color: #03363d;
+            padding: 25px 25px 25px 25px;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: justify;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+           }
+           
+           #header-sec{
+            display: block;
+            padding-top: 300px;
+            background:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+            url(./images/city.png) no-repeat; 
+            background-size: 100%;
+            border-bottom-left-radius: 100px;
+        
+        }
+        .soc-ul{
+            padding-left: 50px;
+        }
+      
+    
   }
